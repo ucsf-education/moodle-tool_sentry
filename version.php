@@ -38,4 +38,4 @@ $plugin->component = 'tool_sentry';
 $plugin->maturity = MATURITY_STABLE;
 
 // User-friendly version number.
-$plugin->release = '1.0.2';
+$plugin->release = '1.0.2.1';
