@@ -25,7 +25,8 @@
 
 require_once('../../../../config.php');
 require_once('../classes/helper.php');
-require_once('../vendor/autoload.php');
+// Use the scoped loader to keep Moodle's Composer installation first (MDL-88782).
+require_once('../scoped_autoload.php');
 
 require_admin();
 

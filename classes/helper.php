@@ -27,7 +27,8 @@ namespace tool_sentry;
 
 defined('MOODLE_INTERNAL') || die();
 
-require_once($CFG->dirroot . '/admin/tool/sentry/vendor/autoload.php');
+// Keep Moodle's Composer installation first to avoid MDL-88782.
+require_once($CFG->dirroot . '/admin/tool/sentry/scoped_autoload.php');
 
 /**
  * Class helper to provide functions to events
